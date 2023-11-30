@@ -1,0 +1,35 @@
+{% extends 'bases/base.html' %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+  <div class="container no-overflow body-start-anim" id="mainContainer">
+    <div class="f-row w-100 main-open" id="overlayTop">
+      <div class="f-column f-left">
+        <div class="main-header-container f-center">
+          <h1 class="main-header">little.bit</h1>
+        </div>
+        <div class="main-undertext-container f-center main-undertext-z" id="main-undertext">
+          <div class="main-undertext-m">
+            <p><a href="javascript:void(0)" onclick="mainOverlayDisable()" class="primary-button">Начать</a><a href="/registration" class="primary-button">Зарегистрироваться</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="f-row w-100 main-close o-none r-background" id="overlayBottom">
+      <div class="f-column f-bottom">
+        <div class="responsive-form primary" id="responsive-form">
+          <form action="login" method="post" enctype="multipart/form-data">
+            <div class="f-row responsive-form-body">
+              <div class="f-column f-center">
+                <p class="responsive-form-header">Вход в little.bit</p>
+                <input class="responsive-form-input secondary" type="text" placeholder="Логин" name="login">
+                <input class="responsive-form-input secondary" type="text" placeholder="little.bit ID" name="llbid">
+                <input class="secondary-button responsive-form-button" type="submit" value="Войти">
+                <a class="primary-button" href="javascript:void(0)" onclick="mainOverlayEnable()">Закрыть</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

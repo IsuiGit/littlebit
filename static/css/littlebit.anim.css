@@ -1,0 +1,105 @@
+/*Animations*/
+.body-start-anim{
+  animation: fadeInAnimation ease var(--animation-time);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+.main-close{
+  animation: fullToZero ease var(--animation-time);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+.main-open{
+  animation: zeroToFull ease var(--animation-time);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+.main-undertext-fadeout{
+  animation: fadeOutAnimation ease var(--animation-time);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+.main-undertext-fadein{
+  animation: fadeInAnimation ease var(--animation-time);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+.main-underlayout-fadein{
+  animation: slideFadeIn ease calc(var(--animation-time)*1.5);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+.main-underlayout-fadeout{
+  animation: slideFadeOut ease calc(var(--animation-time)*1.5);
+  animation-iteration-count: var(--animation-iter-count);
+  animation-fill-mode: forwards;
+}
+
+/*Keyframes*/
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes slideFadeIn{
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+   }
+}
+
+@keyframes fullToZero{
+  0% {
+    height: 100vh;
+  }
+  100%{
+    height: 0vh;
+  }
+}
+
+@keyframes zeroToFull{
+  0% {
+    height: 0vh;
+  }
+  100%{
+    height: 100vh;
+  }
+}
+
+@keyframes fadeOutAnimation{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes slideFadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

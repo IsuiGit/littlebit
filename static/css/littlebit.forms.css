@@ -1,0 +1,51 @@
+/*Forms*/
+
+/*Responsive form*/
+.responsive-form{
+  width: 30rem;
+  height: 28rem;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+  box-shadow: .25rem .25rem 2rem rgba(0, 0, 0, .2);
+}
+
+.responsive-form-body{
+  height: 100%;
+}
+
+.responsive-form-input{
+  font-size: 1.5rem;
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: .25rem .25rem 2rem rgba(255, 255, 255, .2);
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.responsive-form-input:focus{
+  outline: none;
+}
+
+.responsive-form-input::placeholder{
+  color: var(--text-secondary);
+}
+
+.responsive-form-header{
+  font-size: 2rem;
+  margin-top: -.75rem;
+}
+
+.responsive-form-button{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+}
+/*Responsive form end*/

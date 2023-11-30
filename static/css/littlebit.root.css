@@ -1,0 +1,32 @@
+/*Font usage block
+In this block, you can include any text from the fonts.googleapis library*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=PT+Sans:wght@700&display=swap');
+
+/*Root Styling
+Block of basic library variables LittleBit*/
+:root{
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  --bg-primary: #F3EEEA;
+  --bg-secondary: #B0A695;
+  --bg-alter-primary: #D8D9DA;
+  --text-primary: #272829;
+  --text-secondary: #fff;
+  --animation-iter-count: 1;
+  --animation-time: 3s;
+}
+
+/*Resetting default styles*/
+body{
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+  background: var(--bg-primary)
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--bg-secondary)
+}

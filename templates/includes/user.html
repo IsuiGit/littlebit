@@ -1,0 +1,36 @@
+{% extends 'bases/base.html' %}
+{% block title %}{{login}}{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="f-row">
+    <div class="f-column h-100 w-100">
+      <div class="f-row">
+        <div class="f-column-2 f-left">
+          <div class="logo">little.bit</div>
+        </div>
+        <div class="f-column-2 f-right">
+          <div class="top-icons">
+            <a href="#" class="user-top-link"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="user-top-link"><i class="fa-solid fa-gear"></i></a>
+            <a href="{{request.url}}/logout" class="user-top-link"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%if user['firstLogOn']%}
+  <div class="user-pop-firstlogon">
+    <div class="f-row">
+      <div class="f-column f-center h-100">
+        <div class="inline-pop">
+          <p class="user-pop-text">Ваш little.bit ID:</p>
+          <p class="user-pop-llbid">{{user['llb-id']}}</p>
+          <a href="{{request.url}}/?firstLogOn=False" class="user-pop-close"><i class="fa-solid fa-circle-xmark"></i></a>
+        </div>
+        <div class="pop-under-text">Запомните его - little.bit ID используется как пароль для входа в систему</div>
+      </div>
+    </div>
+  </div>
+  {%endif%}
+</div>
+{% endblock %}

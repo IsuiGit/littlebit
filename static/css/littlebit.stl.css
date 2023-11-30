@@ -1,0 +1,64 @@
+/*Stylize*/
+.primary{
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.secondary{
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+}
+
+.alter-primary{
+  color: var(--text-primary);
+  background-color: var(--bg-alter-primary);
+}
+
+.primary-button{
+  text-decoration: none;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1rem;
+  color: var(--bg-primary);
+  background-color: var(--text-primary);
+  border-radius: 2rem;
+  font-size: 1.25rem;
+}
+
+.secondary-button{
+  text-decoration: none;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1rem;
+  color: var(--bg-secondary);
+  background-color: var(--text-secondary);
+  border-radius: 2rem;
+  font-size: 1.25rem;
+}
+
+.logo{
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin: .5rem;
+  border-radius: 2rem;
+}
+
+.top-icons{
+  font-size: 1.5rem;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.user-top-link{
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding: .5rem;
+  color: var(--text-primary);
+}
+
+.user-top-link:hover{
+  color: var(--bg-secondary);
+  transition: calc(var(--animation-time)/6) ease-in-out;
+}

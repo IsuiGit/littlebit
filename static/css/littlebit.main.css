@@ -1,0 +1,132 @@
+/*Containers*/
+.container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.no-overflow{
+  overflow: hidden;
+}
+.f-row{
+  display: flex;
+  flex-direction: row;
+}
+.f-column{
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+}
+.f-column-2{
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+.f-column-3{
+  display: flex;
+  flex-direction: column;
+  flex: 75%;
+}
+.f-column-4{
+  display: flex;
+  flex-direction: column;
+  flex: 25%;
+}
+.f-center{
+  align-items: center;
+  justify-content: center;
+}
+.f-end{
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.f-start{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.f-left{
+  align-items: flex-start;
+  justify-content: center;
+}
+.f-right{
+  align-items: flex-end;
+  justify-content: center;
+}
+.f-top{
+  align-items: center;
+  justify-content: flex-start;
+}
+.f-bottom{
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.f-row-c{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Size section*/
+.h-100{
+  height: 100vh;
+}
+.h-50{
+  height: 50vh;
+}
+.h-25{
+  height: 25vh;
+}
+.w-100{
+  width: 100vw;
+}
+.w-50{
+  width: 50vw;
+}
+.w-25{
+  width: 25vw;
+}
+.o-none{
+  opacity: 0;
+}
+
+/*Main styles section*/
+.main-header-container{
+  display: flex;
+  width: 100%;
+  height: 75%;
+}
+.main-undertext-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 25%;
+}
+.main-undertext-m{
+  margin-bottom: 10vw;
+}
+.main-undertext-z{
+  z-index: 9;
+}
+.main-header{
+  display: flex;
+  font-size: 28vw;
+  background-image: url('../img/littlebit-text-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  background-position: center;
+}
+.main-undertext{
+  display: flex;
+  font-size: 3vw;
+  align-items: baseline;
+  padding-bottom: 8vw;
+}
+.r-background{
+  background-image: url('../img/littlebit-text-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
