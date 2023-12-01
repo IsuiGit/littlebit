@@ -130,3 +130,13 @@
   background-size: cover;
   background-position: center;
 }
+
+.userpage-header{
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.userpage-cont-body{
+  margin-top: 2rem;
+}
