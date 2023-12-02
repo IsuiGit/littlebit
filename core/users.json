@@ -1,1 +1,16 @@
-{"Isui": {"name": "\u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432", "llb-id": "718051", "firstLogOn": false, "logged": true}}
+{
+  "Isui":
+  {
+    "name": "\u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432",
+    "llb-id": "718051",
+    "firstLogOn": false,
+    "logged": true
+  },
+  "nimpfel":
+  {
+    "name": "\u0410\u043b\u0451\u043d\u0430",
+    "llb-id": "109076",
+    "firstLogOn": false,
+    "logged": false
+  }
+}

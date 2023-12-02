@@ -37,14 +37,14 @@
 }
 
 .logo{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: .5rem;
   margin: .5rem;
   border-radius: 2rem;
 }
 
 .top-icons{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: .5rem;
   padding: .5rem;
 }
@@ -52,9 +52,9 @@
 .user-top-link{
   text-decoration: none;
   cursor: pointer;
-  margin-left: .5rem;
-  margin-right: .5rem;
-  padding: .5rem;
+  margin-left: .25rem;
+  margin-right: .25rem;
+  padding: .25rem;
   color: var(--text-primary);
 }
 

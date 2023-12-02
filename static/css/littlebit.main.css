@@ -131,15 +131,39 @@
   background-position: center;
 }
 
-.userpage-fullheight-block{
-  height: 100%;
+.workspace-horizontal{
   width: 100%;
-  justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-left: 2rem;
+  justify-content: center;
 }
 
-.workspace-rounded{
-  border: .1rem solid var(--text-primary);
-  border-radius: 1rem;
+.wh-background{
+  background-image: url('../img/userpage-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.workspace-tile{
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border-radius: 2rem;
+  border: .1rem solid var(--text-secondary);
+}
+
+.workspace-tile:hover{
+  transform: scale(1.1);
+  box-shadow: .5rem .5rem 1rem rgba(255,255,255,0.5);
+  transition: transform calc(var(--animation-time)/6) ease, box-shadow calc(var(--animation-time)/6) ease;
+}
+
+.userpage-header{
+  font-size: 2rem;
 }
